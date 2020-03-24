@@ -7,7 +7,7 @@
         }
 
         body {
-            background-image: url(https://www.nuk.edu.tw/var/file/0/1000/randimg/mobileadv_972_4230459_86501.jpg);
+            background-image: url(https://ocsci.nuk.edu.tw/ezfiles/0/1000/img/2/linkdet_112_150842_11459.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
@@ -21,7 +21,7 @@
 <center>
 	<table border="4" width="1000" bgcolor="" align="center">
 		
-	 <h1>票價表
+	 <h1><font color="purple" size="+6"><p style=" padding-bottom: 20px; background-color:white"; align="center">票價表<
 	<tr>
 		<th bgcolor="F5FF0F"><font color="red" size="+2">站名</th>
 		<th bgcolor="F5FF0F"><font color="red" size="+2">管理學院</th>
@@ -104,7 +104,7 @@
 	</tr>
 	</table>
 	<table border="4" width="1000" >
-	<tr><h1>票種一覽表 	
+		<tr><h1><p style=" padding-bottom: 20px; background-color:white"; align="center">票種一覽表</p> 	
 		<th bgcolor="F5FF0F"><font  size="+2">票種</th>
 		<th bgcolor="F5FF0F"><font  size="+2">優惠</th>
 		<th bgcolor="F5FF0F"><font  size="+2">說明</th>
