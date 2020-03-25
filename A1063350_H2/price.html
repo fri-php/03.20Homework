@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>
+		A1063350 票價資訊
+	</title>
+</head>
+
+<body bgcolor="CED6FF">
+
+	<p align="center"><font size="5" face="微軟正黑體"><b>高大校鐵訂票表單</b></font><br/>
+	</p>
+
+	<form action="ticket.php" method="POST">
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>請輸入您的姓名：</b><input type="text" name="na" placeholder="Chinese name" required ><br/><br/>
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>請輸入您的學號：</b><input type="num" name="id" placeholder="Axxxxxxx" required ><br/><br/>
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>請輸入您的性別：男</b><input type="radio" value="F" name="gender" checked="true" required ><b>女</b><input type="radio" value="M" name="gender" required ><br/><br/>
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>票數：</b><select name="ticket" required>
+		<option value="Full ticket" selected><b>全票</b></option>
+		<option value="old ticket"><b>敬老票</b></option>
+		<option value="heart ticket"><b>愛心票</b></option>	
+		</select>
+		<input type="text" name="ticketnum" placeholder="1張" required >
+		<br/><br/>
+		
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>起訖站：</b>
+		<select name="start" required>
+			<option value="management" selected><b>管理學院</b></option>
+			<option value="law"><b>法學院</b></option>
+			<option value="lib"><b>圖資</b></option>
+			<option value="science"><b>理學院</b></option>
+			<option value="room"><b>學二宿舍</b></option>
+			<option value="trade"><b>工學院</b></option>
+			<option value="administrative"><b>行政大樓</b></option>
+		</select>
+		到
+		<select name="end" required>
+			<option value="management"><b>管理學院</b></option>
+			<option value="law" selected><b>法學院</b></option>
+			<option value="lib"><b>圖資</b></option>
+			<option value="science"><b>理學院</b></option>
+			<option value="room"><b>學二宿舍</b></option>
+			<option value="trade"><b>工學院</b></option>
+			<option value="administrative"><b>行政大樓</b></option>
+		</select>
+		<br/><br/>
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>座位喜好：</b>靠窗<input type="radio" name="set" value="window" checked="true" required >走道<input type="radio" name="set" value="aisle" required ><br/><br/>
+		
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>連絡電話：</b><input type="text" name="phone" required ><br/><br/>
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>信箱：</b><input type="e-mail" name="email" required><br/><br/>
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<textarea cols="50" rows="10" placeholder="備註：" name="comment"></textarea><br/>
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="reset" value="全部重填"><!--重設-->
+		<input type="submit" value="我要訂票"><!--提交-->
+		<input type ="button" onclick="javascript:location.href='order.html'" value="返回首頁"></input><br/>
+		
+	</form><br/><br/>
+
+
+	<ul><!--標符號-->
+		<li><font size="5" face="微軟正黑體"><b>票價表</b></font></li>
+	</ul><br/>
+
+	<table border="1" width="800" height="200" align="center"><!--表格-->
+		<tr>
+			<th bgcolor=#FFEE99>站名</th>
+			<th bgcolor=#FFEE99>管理學院</th>
+			<th bgcolor=#FFEE99>法學院</th>
+			<th bgcolor=#FFEE99>圖資</th>
+			<th bgcolor=#FFEE99>理學院</th>
+			<th bgcolor=#FFEE99>學二宿舍</th>
+			<th bgcolor=#FFEE99>工學院</th>
+			<th bgcolor=#FFEE99>行政大樓</th>
+		</tr>
+
+		<tr>
+			<td style="height:50px;width:100px;" align='center' bgcolor=#FFEE99><b>管理學院</b></td>
+			<td bgcolor=#FFFFFF></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">200</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">300</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">400</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">500</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">600</td>
+		</tr>
+
+		<tr>
+			<td style="height:50px;width:100px;" align='center' bgcolor=#FFEE99><b>法學院</b></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">100</td>
+			<td bgcolor=#FFFFFF></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">200</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">300</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">400</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">500</td>
+		</tr>
+
+		<tr>
+			<td style="height:50px;width:100px;" align='center' bgcolor=#FFEE99><b>圖資</b></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">200</td>
+			<td bgcolor=#FFFFFF></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">200</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">300</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">400</td>
+		</tr>
+
+		<tr>
+			<td style="height:50px;width:100px;" align='center' bgcolor=#FFEE99><b>理學院</b></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">200</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">300</td>
+			<td bgcolor=#FFFFFF></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">200</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">300</td>
+		</tr>
+
+		<tr>
+			<td style="height:50px;width:100px;" align='center' bgcolor=#FFEE99><b>學二宿舍</b></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">200</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">300</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">400</td>
+			<td bgcolor=#FFFFFF></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">200</td>
+		</tr>
+
+		<tr>
+			<td style="height:50px;width:100px;" align='center' bgcolor=#FFEE99><b>工學院</b></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">200</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">300</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">400</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">500</td>
+			<td bgcolor=#FFFFFF></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="FFDAD5">100</td>
+		</tr>
+
+		<tr><td style="height:50px;width:100px;" align='center' bgcolor=#FFEE99><b>行政大樓</b></td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">100</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">200</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">300</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">400</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">500</td>
+			<td style="height:50px;width:100px;" align='center' valign="middle" bgcolor="A1E9FF">600</td>
+			<td bgcolor=#FFFFFF></td>
+		</tr>
+	</table>
+
+	<ul><!--標符號-->
+		<li><font size="5" face="微軟正黑體"><b>票種一覽表</b></font></li>
+	</ul><br/>
+
+	<table border="1" width="650" height="300" align="center">
+		<tr><th bgcolor=#FFEE99 colspan="2" align="center"><b>票種</b></th>
+            <th bgcolor=#FFEE99 align="center"><b>優惠</b></th>
+            <th bgcolor=#FFEE99 align="center"><b>說明</b></th>
+            <th bgcolor=#FFEE99 align="center"><b>備註</b></th>
+		</tr>
+
+		<tr>
+			<td bgcolor=#FECEFF	colspan="2" align="center"><b>普通票/全票</b></td>
+			<td align="center" bgcolor=#FFFFFF><font size="3">---</font></td>
+			<td bgcolor=#FFFFFF align="center"><font size="3">十二歲以上之旅客應購買之乘車票</font></td>
+			<td bgcolor=#FFFFFF align="center">---</td>
+		</tr>
+
+		<tr>
+            <td rowspan="2" bgcolor="#00cc66" align="center"><b>優待票</b></td>
+            <td colspan="1" bgcolor="#9AFFC0" align="center"><b>敬老票</b></td>
+            <td bgcolor=#FFFFFF align="center">5折</td>
+            <td bgcolor=#FFFFFF align="center">年滿六十五歲以上（以乘車當日為準)</td>
+            <td bgcolor=#FFFFFF align="center">需出示身分證件</td>
+        </tr>
+
+
+        <tr>
+            <td colspan="1" bgcolor="#9AFFC0" align="center"><b>愛心票</b></td>
+            <td bgcolor=#FFFFFF align="center">5折</td>
+            <td bgcolor=#FFFFFF align="center">持有身心障礙證明之國民</td>
+            <td bgcolor=#FFFFFF align="center">須出示身心障礙手冊</td>
+        </tr>
+
+	</table>
+
+
+
+</body>
+</html>
