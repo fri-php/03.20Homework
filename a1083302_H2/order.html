@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>
+A1083302 訂票頁面
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body background="1.jpg">	
+<center>		
+<font size="7"><h1>歡迎訂票</h1></font><br/>
+<font size="7"><h2>歡迎訂票</h2></font><br/>
+<font size="7"><h3>歡迎訂票</h3></font><br/>
+<font size="7"><h4>歡迎訂票</h4></font><br/>
+<font size="7"><h5>歡迎訂票</h5></font><br/>
+<font size="7"><h6><a href="http://localhost/price.html"> 
+<img src="https://upload.cc/i1/2020/03/11/uCbne0.png" align="absbottom"></a>歡迎訂票</h6></font><br/>
+
+<form action="me.php" method="post">	
+<font size="5">姓名: <input name="name" required size="10"><br/></font> 
+<font size="5">學號: <input type="text" required name="scode" size="10" ><br/></font>
+<font size="5">性別: <input type="radio" required name="sex" value="male" checked >男性</font> 	
+<font size="5"><input type="radio" required name="sex" value="female">女性<br/></font>	
+<font size="5">票數</font>
+<select name="station" required size="1">
+<option value="全票" selected>全票
+<option value="敬老票" selected>敬老票
+<option value="愛心票" selected>愛心票
+ </select><br/> 
+<font size="5">起訖站</font>
+<select name="firststation" required size="1">
+<option value="管理學院" selected>管理學院
+<option value="法學院" selected>法學院
+<option value="圖資" selected>圖資
+<option value="理學院" selected>理學院
+<option value="學二宿舍" selected>學二宿舍
+<option value="工學院" selected>工學院
+<option value="行政大樓" selected>行政大樓</select><br/>
+<font size="5">座位喜好: <input type="text" required name="seat" size="10" ><br/></font>
+<font size="5">聯絡電話: <input type="text" required name="phone" size="10" ><br/></font>
+<font size="5">信箱: <input type="text" required name="email" size="10"><br/></font>
+<font size="5">備註:<textarea name="other" rows="7" cols="40" wrap="physical"></textarea><br/><br/></font>
+<font size="5"><input type="submit" name="send" value="我要訂票"></font>	
+<font size="5"><input type="reset" name="clear" value="全部重填"><br/></font>	
+</center> 
+</body>
+</html>
