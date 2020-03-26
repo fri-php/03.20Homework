@@ -1,0 +1,61 @@
+<form action="submit.php" method="POST">
+
+<title>A1083324 訂票頁面</title>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body style="background-color: #FFE4B5">
+<center>
+
+<h1>歡迎來到高雄大學環狀鐵路訂票頁面</h1>
+<h2>若要訂票</h2>
+<h3>請填寫下列表單</h3>
+<h4>若想查詢票價</h4>
+<h5>請點選下方圖片</h5>
+<h6>謝謝您</h6>
+<a href=price.html><img src="https://upload.cc/i1/2020/03/11/uCbne0.png"></a></br></br>
+請輸入您的姓名：<input type="text" name="name" required="required"></br>
+請輸入您的學號：<input type="text" name="num" required="required"></br>
+請輸入您的性別：
+男<input type="radio" name="gender" value="M" required="required">
+女<input type="radio" name="gender" value="F" required="required"></br>
+請輸入您的票種：
+<select name="ticket">
+<option value="normal">全票</option>
+<option value="old">敬老票</option>
+<option value="love">愛心票</option>
+</select></br>
+請輸入您的票數：<input type="text" name="ticnum" required="required"></br>
+請輸入您的起訖站：
+起站<select name="start" required="required">
+<option value="m1">管院</option>
+<option value="low1">法學院</option>
+<option value="lib1">圖資</option>
+<option value="ch1">理學院</option>
+<option value="live1">學二宿舍</option>
+<option value="c1">工學院</option>
+<option value="ad1">行政大樓</option>
+</select>
+訖站<select name="arrival">
+<option value="m2">管院</option>
+<option value="low2">法學院</option>
+<option value="lib2">圖資</option>
+<option value="ch2">理學院</option>
+<option value="live2">學二宿舍</option>
+<option value="c2">工學院</option>
+<option value="ad2">行政大樓</option>
+</select></br>
+請輸入您的座位喜好：
+靠近走道<input type="radio" name="seat" value="outside" required="required">
+靠近窗戶<input type="radio" name="seat" value="inside" required="required">
+無<input type="radio" name="seat" value="no" required="required"></br>
+請輸入您的連絡電話：<input type="" name="phone" required="required"></br>
+請輸入您的信箱：<input type="email" name="mail" required="required"></br>
+備註</br><textarea rows="5" cols="20" value="comment" ></textarea></br>
+<input type="submit" value="我要訂票">
+<input type="reset" value="全部重填">
+</center>
+</body>
+</form>
