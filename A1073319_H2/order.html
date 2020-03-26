@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <title>A1073319 訂票頁面</title>
+</head>
+
+
+<body>
+    <div id="siteall">
+         <div id="siteup">     
+            <h1>安安你好</h1><br>
+            <h2>安安你好</h2><br>
+            <h3>安安你好</h3><br>
+            <h4>安安你好</h4><br>
+            <h5>安安你好</h5><br>
+            <h6>安安你好</h6><br>    
+    <a href="price.html"><img src="https://upload.cc/i1/2020/03/11/uCbne0.png" alt=""></a>
+        </div>   
+        
+        <div id="sitedown">
+    <h1>訂票內容填寫:</h1> <br>
+<form action="orderdata.php" method="POST">
+ 訂票人姓名: <input type="text" name="name" id="" required="required"> <br>
+ 訂票人學號: <input type="text" name="sid" id="" required="required">  <br>
+ 票種:<select name="ttype" id="" required="required">
+    <option value="全票" >全票</option>
+    <option value="敬老票">敬老票</option>
+    <option value="愛心票">愛心票</option>
+ </select> <br>
+
+ 起站: <select name="startp" id="" required="required">
+<option value="管理學院">管理學院</option>
+<option value="法學院">法學院</option>
+<option value="圖資">圖資</option>
+<option value="理學院">理學院</option>
+<option value="學二宿舍">學二宿舍</option>
+<option value="工學院">工學院</option>
+<option value="行政大樓">行政大樓</option>
+ </select>
+迄站:<select name="endp" id="" required="required">
+    <option value="管理學院">管理學院</option>
+    <option value="法學院">法學院</option>
+    <option value="圖資">圖資</option>
+    <option value="理學院">理學院</option>
+    <option value="學二宿舍">學二宿舍</option>
+    <option value="工學院">工學院</option>
+    <option value="行政大樓">行政大樓</option>
+    </select> <br>
+    座位喜好: <select name="sitat" id="" required="required">
+<option value="靠窗">靠窗</option>
+<option value="中間">中間</option>
+<option value="靠走道">靠走道</option>
+<option value="都可以">都可以</option>
+    </select> <br>
+    連絡電話: <input type="tel" name="cellph" required="required"> <br>
+    信箱: <input type="email" name="email" id="" required="required"> <br>
+    備註<br><textarea name="others" id="" cols="30" rows="5"></textarea> <br>
+    <input type="submit" value="我要訂票" > <input type="reset" value="全部重填">
+</form>
+        </div>
+
+</div>
+</body>
+</html>
