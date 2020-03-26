@@ -1,0 +1,116 @@
+<html>
+<meta charset="utf-8">
+<title>
+A1083346 票價資訊
+</title>
+<style>
+p.a{font-size: 300%;
+	font-family: 新細明體;
+	text-align: center;
+   }
+p.b{font-size: 150%;
+	font-family: 標楷體;
+   }
+p.c{font-size: 200%;
+	font-family: 標楷體;
+	text-align: center;
+   }
+.form-group span.required {
+	color: #999;
+	font-size: 150%;
+}
+
+</style>
+<body bgcolor="	#CEFFCE">
+	<p class='a'>
+	歡迎來到高雄大學校園環狀鐵路訂票網站
+	<br>
+	<input type ="button" onclick="history.back()" value="回到上一頁">
+	</p>
+	<p class='b'>
+	<form action="ph.php" method="POST">
+		<label for='name'>姓名:</label>
+		<span class="required">*</span>
+		<input type='text' name='name'><br>
+		<label for='numb'>學號:</label>
+		<span class="required">*</span>
+		<input type='text' name='snum'><br>
+		<label for='gender'>性別:</label><span class="required">*</span><br>
+		    男:<input type="radio" name="gender">
+		    女:<input type="radio" name="gender"><br>
+		<label for='ticket'>票數:</label>
+		<span class="required">*</span><br>
+		<select name="station" required size="1">
+            <option value="全票" selected>全票</option>
+            <option value="敬老票" selected>敬老票</option>
+            <option value="愛心票" selected>愛心票</option>
+            </select>
+		<label for='station'>起訖站:</label>
+	    <span class="required">*</span><br>
+	    <select ticket='YourTicket' multiple="multiple">
+		    <option value='管理學院'>管理學院</option>
+		    <option value='法學院'>法學院</option>
+		    <option value='圖資'>圖資</option>
+		    <option value='理學院'>理學院</option>
+		    <option value='學二宿舍'>學二宿舍</option>
+		    <option value='工學院'>工學院</option>
+		    <option value='行政大樓'>行政大樓</option>
+        </select>
+		<br>
+		<label for='tend'>座位喜好:</label>
+		<span class="required">*</span><br>
+		<select ticket='YourTicket' multiple="multiple">
+		    <option value='靠窗'>靠窗</option>
+		    <option value='走道'>走道</option>
+		</select>
+		<br>
+		<label for='ticket'>連絡電話:</label>
+		<span class="required">*</span>
+			<input type='text' name='phone'><br>
+		<label for='ticket'>信箱:</label>
+		<span class="required">*</span>
+			<input type='email' name='email'><br>
+		    備註:<textarea cols="50" rows="10"></textarea>
+		    <br>
+            <input type ="reset" value="全部重填">
+            <input type='submit' value='我要訂票'>
+        </form>
+    </p>
+    <p class='c'>
+    票價表
+    </p>
+    <center>
+    <table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+    <tr><td>站名</td><td>管理學院</td><td>法學院</td><td>圖資</td><td>理學院</td><td>學二宿舍</td><td>工學院</td><td>行政大樓</td></tr>
+
+    <tr><td>管理學院</td><td>-</td><td>100</td><td>200</td><td>300</td><td>400</td><td>500</td><td>600</td></tr>
+
+    <tr><td>法學院</td><td>100</td><td>-</td><td>100</td><td>200</td><td>300</td><td>400</td><td>500</td></tr>
+
+    <tr><td>圖資</td><td>100</td><td>200</td><td>-</td><td>100</td><td>200</td><td>300</td><td>400</td></tr>
+
+    <tr><td>理學院</td><td>100</td><td>200</td><td>300</td><td>-</td><td>100</td><td>200</td><td>300</td></tr>
+
+    <tr><td>學二宿舍</td><td>100</td><td>200</td><td>300</td><td>400</td><td>-</td><td>100</td><td>200</td></tr>
+    
+    <tr><td>工學院</td><td>100</td><td>200</td><td>300</td><td>400</td><td>500</td><td>-</td><td>100</td></tr>
+
+    <tr><td>行政大樓</td><td>100</td><td>200</td><td>300</td><td>400</td><td>500</td><td>600</td><td>-</td></tr>
+    </table>
+    </center>
+    <p class='c'>
+    票種一覽表
+    </p>
+    <center>
+    <table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+    <tr><td colspan="2">票種</td><td>優惠</td><td>說明</td><td>備註</td></tr>
+
+    <tr><td colspan="2">普通票/全票</td><td>-</td><td>-</td><td>正常人別吵</td></tr>
+
+    <tr><td rowspan="2">優待票</td><td>敬老票</td><td>優惠20%</td><td>須持國民身分證等身分證明</td><td>正常人別鬧</td></tr>
+
+    <tr><td>愛心票</td><td>20%優惠</td><td>須持殘障手冊等身分證明</td><td>正常人別鬧</td></tr>
+    </table>
+    </center>
+</body>
+</html>
