@@ -1,0 +1,86 @@
+
+<form action="HW_2.php" method="POST">	
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>A1083310 訂票頁面</title>
+</head>
+
+<body style="background-color:#4b4c4e" >
+
+<FONT face="微軟正黑體" font color="white">
+
+<p align="center">	
+<br/>
+
+<a href="price.html"><img src="LOGO.png"></a><br/>
+</p>
+
+
+<DIV style="text-align:center;">
+<h1>親愛的乘客，您好！</h1>
+<h2>很高興您選用本公司提供的交通服務</h2>
+<h3>祝您旅途愉快、一路平安！</h3>
+<br/><br/>
+<h4>點進上方的LOGO連結即可看到票價與票種</h4>
+<h5>確認完起訖站、票價、票種</h5>
+<h6>網頁下拉即可開始訂票</h6>
+
+</DIV>
+
+<p align="center">	
+
+——————————————————————————————————————————<br/><br/><br/><br/>
+
+<FONT SIZE=5><B>訂票</B></FONT><br/><br/><br/>
+
+姓名：<input type="text" name="name" required="required" ><br/><br/>
+學號：<input type="text" name="idnumber"  required="required" ><br/><br/>
+生理性別：<input type="radio" value="F" name="gender" required="required">女性
+<input type="radio" value="M" name="gender" required="required" >男性<br/><br/>
+
+全票：<input type="number" name="a-number" min="0" max="100" step="1" style="width: 40px" required="required">
+敬老票：<input type="number" name="b-number" min="0" max="100" step="1" style="width: 40px" required="required">
+愛心票：<input type="number" name="c-number" min="0" max="100" step="1" style="width: 40px" required="required"><br/><br/>
+
+起訖站：起 <select name="start" multiple required="required">
+<option value="M01">管理學院</option>
+<option value="L02">法學院</option>
+<option value="L01" selected>圖資大樓</option>
+<option value="C02">理學院</option>
+<option value="P01">學二宿舍</option>
+<option value="C01" selected>工學院</option>
+<option value="P02" selected>行政大樓</option>
+</select>
+ → 訖 <select name="end" multiple required="required">
+<option value="M01">管理學院</option>
+<option value="L02">法學院</option>
+<option value="L01" selected>圖資大樓</option>
+<option value="C02">理學院</option>
+<option value="P01">學二宿舍</option>
+<option value="C01" selected>工學院</option>
+<option value="P02" selected>行政大樓</option>
+</select><br/><br/>
+
+座位喜好：
+		<input type="radio" value="none" name="seat" required="required" >無
+		<input type="radio" value="window" name="seat" required="required">靠窗
+		<input type="radio" value="aisle" name="seat" required="required">靠走道<br/><br/>
+
+連絡電話：<input type="text" name="phone" required="required" ><br/><br/>
+
+電子信箱：<input type="email" name="emaill" style="width: 250px" required="required"><br/><br/>
+
+備註：<textarea cols="40" rows="5" name="more"></textarea><br/><br/>
+
+<input type="reset" value="全部重填">
+<input type="submit" value="我要訂票"><br/><br/><br/>
+<FONT size=1>
+客服資訊：(07)1234-5678 / 聯絡信箱 nukrailway@mail.unk.edu.tw
+</FONT>
+</p>
+
+</FONT>
+
+</body>
+
+
