@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A1073303訂購首頁</title>
+</head>
+<body>
+
+	<h1 align="center">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;W&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Y&emsp;</h1>
+	<h2 align="center">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;E&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;A</h2>
+	<h3 align="center">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;L&emsp;&emsp;&emsp;&emsp;&emsp;W</h3>
+	<h4 align="center">&ensp;&emsp;&emsp;&emsp;&emsp;C&emsp;&emsp;&emsp;&emsp;L</h4>
+	<h5 align="center">N&emsp;&emsp;&emsp;O&emsp;&emsp;&emsp;&ensp;I</h5>
+	<h6 align="center">U&emsp;&emsp;M&emsp;&emsp;A</h6>
+	<p align="center" ><font size="2px">K&emsp;E&emsp;R</font></p>
+	<p align="center"><font size="1.5px">CLICK PIC</font></p>
+	
+	
+
+	<a href="price.html"><img src="https://upload.cc/i1/2020/03/11/uCbne0.png" height="150px" width="150px"  style="position: relative; top:10px;left:550px;margin-bottom: 15px"></a>
+
+
+	<div style="border: 2px #FFFBF1 solid; border-radius: 5px;width: 460px;width: 470px ;margin: 0 auto;background-color: #FFFBF1">
+		<form action="td.php" method="POST">
+			<p align="center"><font face="標楷體">名字</font><br>
+				<input type="TEXT" style="font-family: 標楷體" name="NAME" required="required"></font></p><br>
+
+			<p align="center"><font face="標楷體">學號</font><br>
+				<input type="TEXT" style="font-family: 標楷體" name="STUDENT_ID" required="required"></font></p><br>
+
+			<p align="center"><font face="標楷體">性別<br></p>
+			<p align="center"><font face="標楷體">
+			男 <input type="RADIO" name="SEX" value = "BOY" required="required">
+			女 <input type="RADIO" name="SEX" value ="GIRL" required="required"></font></p><br>
+
+			
+			<p align="center"><font face="標楷體">購票<br>
+			<p align="center"><font face="標楷體"><input type="CHECKBOX" name="TICKET" value = "ADULT" >&emsp;全票<input type="NUMBER" name="AMOUNT" value="A_AMOUNT" required="required">張</font></p>
+			<p align="center"><font face="標楷體"><input type="CHECKBOX" name="TICKET" value = "ELDER" >敬老票<input type="NUMBER" name="AMOUNT" value="E_AMOUNT" required="required">張</font></p>
+			<p align="center"><font face="標楷體"><input type="CHECKBOX" name="TICKET" value = "DISABLE" >愛心票<input type="NUMBER" name="AMOUNT" value="D_AMOUNT" required="required">張</font></p>
+
+			<p align="center"><font face="標楷體">起點站<br>
+				<select name="START" id="" required="required">
+            		<option value="M" style="font-family: 標楷體">管理學院</option>
+            		<option value="L" style="font-family: 標楷體">法學院</option>
+            		<option value="LIBRARY" style="font-family: 標楷體">圖資</option>
+            		<option value="S" style="font-family: 標楷體">理學院</option>
+            		<option value="D" style="font-family: 標楷體">學二宿舍</option>
+            		<option value="E" style="font-family: 標楷體">工學院</option>
+            		<option value="G" style="font-family: 標楷體">行政大樓</option>
+        		</select></font></p><br>
+			<p align="center"><font face="標楷體">終點站<br>
+				<select name="FINAL" required="required">
+            		<option value="M" style="font-family: 標楷體">管理學院</option>
+            		<option value="L" style="font-family: 標楷體">法學院</option>
+            		<option value="LIBRARY" style="font-family: 標楷體">圖資</option>
+            		<option value="S" style="font-family: 標楷體">理學院</option>
+            		<option value="D" style="font-family: 標楷體">學二宿舍</option>
+            		<option value="E" style="font-family: 標楷體">工學院</option>
+            		<option value="G" style="font-family: 標楷體">行政大樓</option>
+            	</select></font></p><br>
+
+            <p align="center"><font face="標楷體">座位偏好<br>
+				<select name="SEAT_PREFER" required="required">
+					<option value="RANDOM" style="font-family: 標楷體">無</option>
+            		<option value="WINDOW" style="font-family: 標楷體">靠窗</option>
+            		<option value="AISLE" style="font-family: 標楷體">靠走道</option>
+            	</select></font></p><br>
+
+            <p align="center"><font face="標楷體">聯絡電話<br>
+			<input type="NUMBER" required="required" style="font-family: 標楷體" name="PHONE_NUMBER" ></font></p><br>
+
+		<p align="center"><font face="標楷體">電子信箱<br>
+			<input type="EMAIL" style="font-family: 標楷體" name="EMAIL" required="required"></font></p><br>
+
+		<p align="center"><font face="標楷體">備註<br>
+		<TEXTAREA name="SPECIAL_NOTE" cols="30" rows="10"></TEXTAREA></font></p><br>
+
+		<p align="center"><input type="SUBMIT" name="SUBMIT" value = "我要訂票!" style="font-family: 標楷體"></p>
+		<p align="center"><input type="RESET" name="CLEAR" value = "全部重新填寫" style="font-family: 標楷體"></p><br>
+		</form>
+	</div>
+
+</body>
+</html>
