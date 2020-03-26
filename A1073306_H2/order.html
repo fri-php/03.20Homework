@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1073306 訂票頁面</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body bgcolor="">
+    <div class="Welcome">
+        <h1>歡迎使用高大校鐵訂票系統</h1>
+        <h2>我們提供最快速便利的交通服務</h2>
+        <h3>我們擁有最親切善良的服務態度</h3>
+        <h4>簡潔有力、簡單易上手的訂票系統</h4>
+        <h5>還等什麼呢？</h5>
+        <h6>快動動小手購買你的第一張高大校鐵車票吧！</h6>
+        <a href="price.html"><img src="https://upload.cc/i1/2020/03/11/uCbne0.png" alt="NUKRAILWAY 票價資訊"></a>
+    </div>
+    <div class="ForBuyTickets">
+        <p>訂票表單</p>
+        <form action="info.php" method="POST">
+            姓名&emsp;<input type="text" required name="Name"></br>
+            學號&emsp;<input type="text" required name="Sid"></br>
+            性別&emsp;
+            <input type="radio" name="gender" value="Male" required>男性&emsp;
+            <input type="radio" name="gender" value="Female" required>女性&emsp;</br>
+            票數</br>
+            全票&emsp;&emsp;<input type="number" min="0" name="adult" value ="0" required></br>
+            敬老票&emsp;<input type="number" min="0" name="older" value ="0" required></br>
+            愛心票&emsp;<input type="number" min="0" name="heart" value ="0" required></br>
+            起訖站<br/>
+            起站
+            <select name="depart" required>
+                <option value="Management">管理學院</option>
+                <option value="Law">法學院</option>
+                <option value="Library">圖資</option>
+                <option value="Science">理學院</option>
+                <option value="Dormitory">學二宿舍</option>
+                <option value="Engineer">工學院</option>
+                <option value="Administration">行政大樓</option>
+            </select>&emsp;
+            訖站
+            <select name="destination" required>
+                <option value="Management">管理學院</option>
+                <option value="Law">法學院</option>
+                <option value="Library">圖資</option>
+                <option value="Science">理學院</option>
+                <option value="Dormitory">學二宿舍</option>
+                <option value="Engineer">工學院</option>
+                <option value="Administration">行政大樓</option>
+            </select></br>
+            座位喜好&emsp;
+            <select name="Seat" required>
+                <option value="Window">靠窗</option>
+                <option value="Aisle">靠走道</option>
+                <option value="Stand">我喜歡站著</option>
+                <option value="Whatever">坐哪裡都好我沒差</option>
+            </select></br>
+            連絡電話&emsp;<input type="tel" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="09xx-xxx-xxx" required></br>
+            信箱&emsp;<input type="email" placeholder="nulrailway@mail.nuk.edu.tw" required  name="email"></br>
+            備註</br>
+            <textarea name="message"cols="43" rows="5" placeholder="高大校環鐵酷喔!!!!!!"></textarea></br>
+            <input type="submit" value="我要訂票">
+            <input type="reset" value="全部重填">
+        </form>
+    </div>
+</body>
+</html>
