@@ -1,0 +1,87 @@
+﻿<html>
+ <head>
+ <title>a1073311 訂票頁面</title>
+ </head>
+ <style>
+        input {padding:5px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+        textarea {padding:10px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+        select {padding:5px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    .form-group input:after {
+	content: ' *';
+	color: #999;
+	font-size: 150%;
+}
+    </style>
+ <body><center><form action="a1073311HW2.php" method="POST">
+     <form action="/example/html5/demo_form.asp" method="get">
+     <h1>歡迎</h1>
+     <h2>歡迎</h2>
+     <h3>歡迎</h3>
+     <h4>歡迎</h4>
+     <h5>歡迎</h5>  
+     <h6>歡迎</h6>
+     <a href="price.html"><img src="https://upload.cc/i1/2020/03/11/uCbne0.png"title="票價資訊"></a></p>
+     姓名:<input type="text" name="name" placeholder="輸入姓名" required="required" /></p>
+     學號:<input type="text" name="id" placeholder="輸入學號" required="required" /></p>
+     性別:男<input type="radio" name="gender" value="male">女<input type="radio" name="gender" value="female" required="required" /></p>
+     票種:<select id="票種" name="票種" required="true">
+            <option value="" disabled selected hidden>請選擇</option>
+            <option value="1">普通票</option>
+            <option value="2">敬老票</option>
+            <option value="3">愛心票</option>
+            </select></p>
+     票數:<select name="select_one">
+            <option value="" disabled selected hidden>請選擇</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            </select></p>
+     起站:<select name="select_one_start">
+            <option value="" disabled selected hidden>請選擇</option>
+            <option value="1">管理學院</option>
+            <option value="2">法學院</option>
+            <option value="3">圖資</option>
+            <option value="4">理學院</option>
+            <option value="5">學生第二宿舍</option>
+            <option value="6">工學院</option>
+            <option value="7">行政大樓</option>
+            </select></p>
+     訖站:<select name="select_one_stop">
+            <option value="" disabled selected hidden>請選擇</option>
+            <option value="1">管理學院</option>
+            <option value="2">法學院</option>
+            <option value="3">圖資</option>
+            <option value="4">理學院</option>
+            <option value="5">學生第二宿舍</option>
+            <option value="6">工學院</option>
+            <option value="7">行政大樓</option>
+            </select></p>
+     座位喜好:<select name="select_one_seat">
+            <option value="" disabled selected hidden>請選擇</option>
+            <option value="1">靠窗</option>
+            <option value="2">靠走道</option>
+            <option value="3">中間</option>
+            </select></p>
+     連絡電話:<input type="text" name="phone" placeholder="輸入電話" required="required" /></p>
+     信箱:<input name="email" id="email" type="email" placeholder="輸入信箱" required="required" /></p>
+     備註:<textarea cols="50" rows="5" name="plus" placeholder="請輸入備註"></textarea></p>
+     <input type="submit" onclick="location.href='a1073311HW2.php'" value="送出表單">
+     <input type="reset" value="全部重填" /><br />
+        </form></center></body>
+</html>
